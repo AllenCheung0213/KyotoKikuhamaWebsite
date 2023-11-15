@@ -16,7 +16,7 @@ const Sidebar = () => {
             <nav>
                 <ul>
                     <li>
-                        <a href="#Map">Mapping Kikuhama</a>
+                        <a href="#Map">Mapping Kikuhama 菊浜</a>
                     </li>
                     <li>
                         <a href="#projects">Student Projects</a>
