@@ -2,7 +2,11 @@
 import React from 'react';
 import kyotoCity from "./pictures/kyotoCity.png";
 import kikuhamaMap from "./pictures/kikuhamaMap.png";
-
+import IQP2019 from "./iqpreports/2019Report.pdf";
+import IQP2021 from "./iqpreports/2021Report.pdf";
+import IQP2022 from "./iqpreports/2022Report.pdf";
+import IQP2022a from "./iqpreports/2022aReport.pdf";
+import IQP2023 from "./iqpreports/2023Report.pdf";
 const Content = () => {
     return (
         <section>
@@ -31,18 +35,45 @@ const Content = () => {
                         </p>
                     </div>
                 </div>
-                <h3>Projects Over the Years (2019 - 2023)</h3>
-                <div className = "over-the-years">
-                    <embed src={yourPDFDocument} type="application/pdf" width="100%" height="600px" />
-
+                <h3>Projects in Kikuhama Over the Years (2019 - 2023)</h3>
+                <div className="over-the-years">
+                    {/* Row 1 */}
+                    <div className="pdf-row">
+                        <div className="pdf-embed">
+                            <embed src={IQP2019} type="application/pdf" width="100%" height="400px" />
+                            <p className="caption">Mapping for the Future of Gojo Rakuen (2019)</p>
+                        </div>
+                        <div className="pdf-embed">
+                            <embed src={IQP2021} type="application/pdf" width="100%" height="400px" />
+                            <p className="caption">Mapping for Vital Kyoto: A Case Study on Kikuhama (2021)</p>
+                        </div>
+                    </div>
+                    {/* Row 2 */}
+                    <div className="pdf-row">
+                        <div className="pdf-embed">
+                            <embed src={IQP2022a} type="application/pdf" width="100%" height="400px" />
+                            <p className="caption">Unrooting the Issue: Conflict Resolution of Urban River Restoration, Kikuhama (2022)</p>
+                        </div>
+                        <div className="pdf-embed">
+                            <embed src={IQP2022} type="application/pdf" width="100%" height="400px" />
+                            <p className="caption">Community-Centered Activity Along The Takase River (2022)</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Revitalizing Kikuhama: Mapping, Envisioning, and Building a Vibrant Tomorrow (2023)</h3>
+                <div className="project2023">
+                    <div className="pdf-embed">
+                        <embed src={IQP2023} type="application/pdf" width="100%" height="400px" />
+                        <p className="caption">Revitalizing Kikuhama: Mapping, Envisioning, and Building a Vibrant Tomorrow (2023)</p>
+                    </div>
                 </div>
             </div>
             <div id="projects">
-                <h2>Student Projects</h2>
+                <h2>Student Projects 2023</h2>
                 {/* Your projects content goes here */}
             </div>
             <div id="open-data">
-                <h2>Open Data</h2>
+                <h2>Open Data for Kikuhama Project 2023</h2>
                 {/* Your open data content goes here */}
             </div>
             {/* Add more sections as needed */}

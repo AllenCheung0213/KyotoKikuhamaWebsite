@@ -145,6 +145,39 @@ h3 {
   margin-left: 70px;
 }
 
+/* Add this to your existing CSS or create a new CSS file */
+.over-the-years {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Optional: Add margin if needed */
+  margin-left: 65px;
+  margin-right: 65px;
+
+}
+
+.pdf-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.pdf-embed {
+  width: 48%; /* Adjust as needed to leave some space for margins */
+  margin-bottom: 20px; /* Optional: Add margin between rows */
+  text-align: center; /* Optional: Center the content within each div */
+}
+
+.project2023 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Optional: Add margin if needed */
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+
 
 
 
