@@ -1,183 +1,277 @@
+/* App.css */
 body {
   margin: 0;
-  font-family: Georgia, serif;
-  background-color: #BBD4CE;
+  font-family: 'Merriweather';
 }
 
-body {
-  margin: 0;
-  font-family: Georgia, serif;
+/* Set background and text color for non-homepage content */
+body:not(#content.initial) {
+  background-color: #211F24;
+  color: white;
 }
 
-.sidebar {
-  height: 100%;
-  width: 0;
+#header {
+  background: #211F24;
   position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #9EB6B1;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  width: 100%;
+  z-index: 1000;
 }
 
-.sidebar.open {
-  width: 250px;
-}
-
-.sidebar .hamburger-menu {
-  font-size: 30px;
-  cursor: pointer;
-  color: #679186;
-  padding: 15px;
-  position: fixed;
-  top: 40px;
-  left: 20px;
+nav {
+  background: transparent;
+  opacity: 70%;
+  padding: 10px;
+  height: 50px;
+  box-shadow: 1px 1px 1px 1px white;
 }
 
 nav ul {
-  padding: 0;
   list-style-type: none;
+  margin-left: 800px;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-family: 'Merriweather';
 }
 
-nav ul li {
-  padding: 15px;
+nav a {
   color: white;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-nav ul li:hover {
-  background-color: #9EB6B1;
+/*Home page css*/
+#content.initial {
+  background-image: url('./pictures/kyotocityimagebackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  height: 100vh;
 }
 
-section {
+.home-content {
+  color: white;
+  max-height: 3000px;
+}
+
+.home-content h1 {
+  font-size: 120px;
+  padding-left: 50px;
+  padding-top: 80px;
+  text-align: left;
+}
+
+.home-content p {
+  font-size: 35px;
+  line-height: 1.6;
+  padding-left: 50px;
+  padding-right: 100px;
+  margin-top: 90px;
+  text-align: left;
+}
+
+/*about content*/
+.about-content {
   padding: 20px;
+  margin-top: 20px;
+  text-align: left;
 }
 
-footer {
-  background-color: #333;
-  padding: 10px;
-  color: white;
+.about-content h1 {
+  font-size: 75px;
+  padding-left: 50px;
+  padding-top: 20px;
   text-align: center;
-  position: fixed;
-  bottom: 0;
+  margin-bottom: 100px;
+}
+
+.about-content h2 {
+  font-size: 55px;
+  padding-left: 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.about-content h3 {
+  font-size: 35px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 25px;
+  line-height: 1.6;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  width: 30%;
+  height: 500px;
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+.box img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-/*top section */
-h1 {
-  font-size: 4.5em; /* Adjust the size as needed */
-  font-family: Georgia, serif;
-  color: #679186;
-  margin-top: 15px;
-  margin-bottom: 40px;
-  margin-left: 70px;
+.box h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
 }
 
-.text p  {
-  font-size: 1.9em; /* Adjust the font size as needed */
-  line-height: 1.5; /* Adjust the line height as needed */
-  padding: 20px; /* Add padding to the text */
-  margin-left: 60px;
-  margin-top: 130px;
-}
-.project-description {
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
-  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.image {
-  flex: 1;
+.popup-content {
+  background: #211F24;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  max-height: 70%;
+  max-width: 70%;
+  overflow-y: auto;
 }
 
-.image img {
-  width: 90%; /* Adjust the width as needed */
-  max-width: 100%; /* Ensure the image does not exceed its original size */
-  margin-left: 20px;
-  margin-bottom: 20px;
+.popup-title {
+  font-size: 14px; /* Adjust the font size for the pop-up title */
 }
 
-/*mapping of kikuhama section*/
-h2 {
-  font-size: 3.5em; /* Adjust the size as needed */
-  font-family: Georgia, serif;
-  color: #679186;
-  margin-top: 15px;
-  margin-bottom: 40px;
-  margin-left: 70px;
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
 }
 
-.project5 {
+.text-with-image {
   display: flex;
-  margin-bottom: 20px;
+  align-items: center;
+}
+.text-with-image p {
+  text-align: right;
+  margin-right: 80px;
+  margin-left: 100px;
+  margin-top: -50px;
 }
 
-.text {
-  flex: 1;
-  padding-right: 20px;
+.side-image {
+  margin-left: 20px; /* Adjust margin as needed */
+  margin-right: 150px;
+  max-width: 500px; /* Adjust max-width as needed */
+  max-height: 500px;
+  height: auto;
+  margin-bottom: 50px;
 }
 
-.text-description p {
-  font-size: 1.6em;
-  line-height: 1.5;
-  padding: 100px; /* Adjust the padding to contain the text more */
-  margin-bottom: 100px; /* Adjust the margin between paragraphs */
-  margin-top: 30px;
+.about-text2 h2 {
+  text-align: left;
+}
+
+.side-image1 {
+  margin-right: 50px;
+  max-width:600px;
+
+}
+
+.text-with-image1 {
+  display: flex;
+  align-items: center;
+}
+.text-with-image1 p {
+  text-align: right;
+  margin-right: 80px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+
+
+/*mapping 2023*/
+.mapping-content {
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.mapping-content h1 {
+  font-size: 75px;
+  padding-left: 50px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.mapping-content h2 {
+  font-size: 55px;
+  padding-left: 50px;
+  padding-top: 50px;
+  text-align: left;
+}
+
+.mapping-content p {
+  font-size: 25px;
+  line-height: 1.6;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.kikuhamaMap img {
+  max-width: 65%;
+  height: auto;
+  margin-top: 60px;
+  margin-left: 275px;
+}
+
+.caption p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.kikuhamaFullMap img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 60px;
   margin-left: 400px;
 }
-
-.imageOfKikuhama img {
-  width: 400%; /* Adjust the width as needed */
-  max-width: 400%; /* Ensure the image does not exceed its original size */
-  padding: 20px;
-  margin-bottom: 20px;
-  margin-left: 60px;
-}
-
-h3 {
-  font-size: 2.0em; /* Adjust the size as needed */
-  font-family: Georgia, serif;
-  color: #679186;
-  margin-top: 15px;
-  margin-bottom: 40px;
-  margin-left: 70px;
-}
-
-/* Add this to your existing CSS or create a new CSS file */
-.over-the-years {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20px; /* Optional: Add margin if needed */
-  margin-left: 65px;
-  margin-right: 65px;
-
-}
-
-.pdf-row {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.pdf-embed {
-  width: 48%; /* Adjust as needed to leave some space for margins */
-  margin-bottom: 20px; /* Optional: Add margin between rows */
-  text-align: center; /* Optional: Center the content within each div */
-}
-
-.project2023 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20px; /* Optional: Add margin if needed */
-  margin-left: 65px;
-  margin-right: 65px;
-}
-
-
-
-
-

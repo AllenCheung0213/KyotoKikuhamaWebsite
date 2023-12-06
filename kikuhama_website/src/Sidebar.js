@@ -19,9 +19,6 @@ const Sidebar = () => {
                         <a href="#Map">Mapping Kikuhama 菊浜</a>
                     </li>
                     <li>
-                        <a href="#projects">Student Projects</a>
-                    </li>
-                    <li>
                         <a href="#open-data">Open Data</a>
                     </li>
                     {/* Add more links as needed */}
