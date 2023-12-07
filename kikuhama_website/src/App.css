@@ -281,8 +281,28 @@ nav a {
 }
 
 .mapping-text4 embed {
+  margin-top: 100px;
   margin-left: 300px;
 }
+
+/*past projects*/
+.pastProject h1 {
+  font-size: 75px;
+  padding-left: 50px;
+  text-align: center;
+}
+.pdf-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.pdf-embed {
+  width: 52%; /* Adjust as needed to leave some space for margins */
+  margin-bottom: 20px; /* Optional: Add margin between rows */
+  text-align: center; /* Optional: Center the content within each div */
+}
+
 /*contact us*/
 .contact-content {
   background-color: #393540;

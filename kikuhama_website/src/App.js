@@ -5,6 +5,7 @@ import HomePageContent from './HomePageContent';
 import AboutContent from './AboutContent';
 import MappingContent from "./MappingContent";
 import ContactUs from "./ContactUs";
+import PastProjects from "./PastProjects";
 const App = () => {
     const [scrolled, setScrolled] = useState(false);
     const [hovered, setHovered] = useState(false);
@@ -41,7 +42,7 @@ const App = () => {
                         <li onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</li>
                         <li onClick={() => window.scrollTo({ top: 920, behavior: 'smooth' })}>About</li>
                         <li onClick={() => window.scrollTo({ top: 2390, behavior: 'smooth' })}>Mapping Kikuhama</li>
-                        <li><a href="#projects">Other Projects</a></li>
+                        <li onClick={() => window.scrollTo({ top: 5390, behavior: 'smooth' })}>Past Projects</li>
                         <li onClick={() => window.scrollTo({ top: 7000, behavior: 'smooth' })}>Contact Us</li>
                     </ul>
                 </nav>
@@ -52,6 +53,7 @@ const App = () => {
                     <div id="aboutpage">
                         <AboutContent />
                         <MappingContent />
+                        <PastProjects />
                         <ContactUs />
                     </div>
                 </div>
