@@ -4,7 +4,7 @@ import './App.css';
 import HomePageContent from './HomePageContent';
 import AboutContent from './AboutContent';
 import MappingContent from "./MappingContent";
-
+import ContactUs from "./ContactUs";
 const App = () => {
     const [scrolled, setScrolled] = useState(false);
     const [hovered, setHovered] = useState(false);
@@ -38,11 +38,11 @@ const App = () => {
             <header id="header" className={`${scrolled || hovered ? 'scrolled' : ''}`}>
                 <nav>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li onClick={() => window.scrollTo({ top: 1000, behavior: 'smooth' })}>About</li>
-                        <li><a href="#mapping">Mapping Kikuhama</a></li>
+                        <li onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</li>
+                        <li onClick={() => window.scrollTo({ top: 920, behavior: 'smooth' })}>About</li>
+                        <li onClick={() => window.scrollTo({ top: 2390, behavior: 'smooth' })}>Mapping Kikuhama</li>
                         <li><a href="#projects">Other Projects</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li onClick={() => window.scrollTo({ top: 7000, behavior: 'smooth' })}>Contact Us</li>
                     </ul>
                 </nav>
             </header>
@@ -52,6 +52,7 @@ const App = () => {
                     <div id="aboutpage">
                         <AboutContent />
                         <MappingContent />
+                        <ContactUs />
                     </div>
                 </div>
                 {/* Add other content components as needed */}

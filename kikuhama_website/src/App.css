@@ -19,7 +19,7 @@ body:not(#content.initial) {
 
 nav {
   background: transparent;
-  opacity: 70%;
+  opacity: 100%;
   padding: 10px;
   height: 50px;
   box-shadow: 1px 1px 1px 1px white;
@@ -121,12 +121,12 @@ nav a {
 
 .box {
   position: relative;
-  width: 30%;
+  width: 21%;
   height: 500px;
-  margin: 10px;
+  margin: 25px;
   cursor: pointer;
   overflow: hidden;
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 .box img {
@@ -251,7 +251,6 @@ nav a {
   line-height: 1.6;
   padding-left: 50px;
   padding-right: 50px;
-  margin-top: 90px;
   text-align: center;
 }
 
@@ -273,5 +272,27 @@ nav a {
   max-width: 100%;
   height: auto;
   margin-top: 60px;
-  margin-left: 400px;
+  margin-left: 425px;
+}
+
+.pastMap img {
+  max-width: 800px;
+  margin-left: 325px;
+}
+
+.mapping-text4 embed {
+  margin-left: 300px;
+}
+/*contact us*/
+.contact-content {
+  background-color: #393540;
+}
+
+.contact-content h1 {
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.contact-content p {
+  margin-left: 25px;
 }

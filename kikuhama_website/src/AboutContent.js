@@ -43,12 +43,9 @@ const AboutContent = () => {
                     <img src={diversePerspectiveImage} alt="Diverse Perspectives" />
                     <h3>Diverse Perspectives</h3>
                 </div>
-            </div>
-            <div className="about-text2">
-                <h2>Our Approach</h2>
-                <div className="text-with-image1">
-                    <p>Our approach is rooted in a delicate balance—preserving the historical charm that makes Kikuhama unique, while innovatively addressing the demands of a modern community. We believe in a collaborative and community-driven process, where every voice contributes to the narrative of Kikuhama's evolution. At the Kikuhama Urban Revitalization Project, we're not just revitalizing a district; we're building a future where the echoes of the past resonate harmoniously with the rhythms of progress. </p>
-                    <img src={kamoRiver} alt="Kamo River" className="side-image1" />
+                <div className="box" onClick={() => handleBoxClick('Our Approach', 'Our approach is rooted in a delicate balance—preserving the historical charm that makes Kikuhama unique, while innovatively addressing the demands of a modern community. We believe in a collaborative and community-driven process, where every voice contributes to the narrative of Kikuhama\'s evolution. At the Kikuhama Urban Revitalization Project, we\'re not just revitalizing a district; we\'re building a future where the echoes of the past resonate harmoniously with the rhythms of progress.')}>
+                    <img src={kamoRiver} alt="Our Approach" />
+                    <h3>Our Approach</h3>
                 </div>
             </div>
 
