@@ -21,7 +21,7 @@ const AboutContent = () => {
 
     return (
         <section id="about" className="about-content">
-            <h1 className="centered-title">About Mapping Kikuhama</h1>
+            <h1 className="centered-title">About the Project</h1>
             <div className="about-description">
                 <div className="about-text1">
                     <div className="text-with-image">
