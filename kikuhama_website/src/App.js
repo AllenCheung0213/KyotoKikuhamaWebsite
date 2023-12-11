@@ -44,7 +44,7 @@ const App = () => {
                         <li onClick={() => window.scrollTo({ top: 920, behavior: 'smooth' })}>About</li>
                         <li onClick={() => window.scrollTo({ top: 2390, behavior: 'smooth' })}>Mapping Kikuhama</li>
                         <li onClick={() => window.scrollTo({ top: 5460, behavior: 'smooth' })}>Past Projects</li>
-                        <li onClick={() => window.scrollTo({ top: 6890, behavior: 'smooth' })}>Open Data 2023</li>
+                        <li onClick={() => window.scrollTo({ top: 6790, behavior: 'smooth' })}>Open Data 2023</li>
                     </ul>
                 </nav>
             </header>
